@@ -1,0 +1,19 @@
+# Emulator (large files, several GB)
+雷电模拟器/
+
+# LDPlayer multi-instance manager (binaries)
+fk-gps/leidian/
+
+# Downloaded temp files
+*.apk
+*.zip
+*.png
+*.xml
+kitsune_extracted/
+lsposed_extracted/
+magisk_extracted/
+__pycache__/
+*.pyc
+
+# Claude config
+.claude/
