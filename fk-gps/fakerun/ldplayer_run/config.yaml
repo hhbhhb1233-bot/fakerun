@@ -1,0 +1,32 @@
+# ========================================
+# 雷电模拟器 虚拟跑步配置
+# ========================================
+
+# 路线文件 (支持现有格式的 txt 或自定义格式)
+routeFile: "route.txt"
+
+# 速度模式: walk(1.2), jog(2.5), run(4.0), sprint(6.0), bike(8.0)
+# 也可以直接写数字 (m/s)
+speed: 3.0
+
+# 更新间隔 (秒) — 越小越平滑，1.0 已足够
+interval: 1.0
+
+# 是否循环跑
+loop: true
+
+# 坐标偏移抖动 (米) — 让轨迹更自然，0 则完全沿路线
+noise: 3.0
+
+# 连接方式:
+#   "adb"        — adb emu geo fix (标准Android模拟器)
+#   "ldconsole"  — ldconsole locate --LLI (雷电模拟器专用，推荐)
+#   "auto"       — 优先 ldconsole，找不到则 fallback 到 adb
+method: "auto"
+
+# 设备标识
+# adb 模式下可用: 设备序列号 (adb devices 查看)，留空则自动选择
+deviceSerial: ""
+
+# ldconsole 模式下可用: 模拟器索引 (0 为第一个)
+emulatorIndex: 0
